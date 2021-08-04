@@ -89,7 +89,7 @@ body {
     grid-row: 1 / span 1;
     border-radius:  0% 0% 60% 20%; 
     background-color: #9bf6ff;
-  border: none;
+    border: none;
   }
 
   .nav-box {
