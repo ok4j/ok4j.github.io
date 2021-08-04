@@ -65,8 +65,8 @@ body {
   .item {
     padding: 0px;
     background-color: white;
-    /* border: 1px solid black; */
-    /* border-radius: 6px; */
+    border: 1px solid black;
+    /* border-radius: 6px;  */
     /* box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25); */
   }
 
@@ -83,37 +83,82 @@ body {
       grid-template-rows: repeat(6, 1fr);
   }
 
-  .quote-box-1 {
+ 
+  .header-box {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 1;
+    border-radius:  0% 0% 60% 20%; 
+    background-color: #9bf6ff;
+  border: none;
+  }
+
+  .nav-box {
 	  background-color: #9bf6ff;
       grid-column: 1 / span 4;
       grid-row: 1 / span 1;
   }
 
-  .quote-box-2 {
+  .profile-container {
+    min-height: 323px;
+    max-width: 248px;
+    margin-top: 5vmin;
     grid-column: 1 / span 1;
-    grid-row: 3 / span 4;
+    grid-row: 2 / span 2;
+    display: flex;
+    flex-direction: column  ;
+    align-items: center;
+    border-radius:  5% 0% 25% 10%;
+    background-color: #bdb2ff;
+    border: none;
+  }
+  .profile-box {
+	  /* background-color: #bdb2ff; */
+  
   }
 
-  .quote-box-3 {
-	  background-color: #bdb2ff;
-      grid-column: 2 / span 3;
-      grid-row: 3 / span 6;
+  .avatar {
+    
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    margin-top: 25px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    ;
+    
+  }
+  .avatar img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+  }
+.avatar-img{
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+}
+  .sidebar-box{
+    background-color: #bdb2ff ;
+        grid-column: 1 / span 1;
+        grid-row: 2 /span 5;
+    }
+
+  .main-box {
+    margin: 5vmin 5vmin 15vmin 5vmin;
+      grid-column: 2 / span 4;
+      grid-row: 2 / span 4;
+      border-radius: 10% 40% / 50% 20%;
+      background-color: #ffc6ff;
+      border: none;
   }
 
-  .quote-box-4 {
-      grid-column: 1 / span 1;
-      grid-row: 3 / span 4;
-  }
-
-  .profile {
-	background-color: #bdb2ff ;
-      grid-column: 1 / span 1;
-      grid-row: 2 /span 1;
-  }
-
-  .quote-box-6 {
-      grid-column: 2 / span 3;
-      grid-row: 2 / span 1;
+  .footer-box {
+    background-color: #fdffb6;
+      grid-column: 1 / span 4;
+      grid-row: 6 / span 1;
+      border-radius: 60% 20% 0% 0%;
+      border: none;
 
   }
 
